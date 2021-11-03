@@ -1,3 +1,6 @@
+from django.urls import path
+from .views import StockList
 
-
-urlpatterns = []
+urlpatterns = [
+    path('', StockList.as_view())
+]

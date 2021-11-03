@@ -13,5 +13,5 @@ class StockList(APIView):
         stocks = Stock.objects.all()
         serializer = StockSerializer(stocks, many=True)
         return Response(serializer.data)
-        
+
 
