@@ -2,15 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-import threading
 
-def setInterval(func,time):
-    e = threading.Event()
-    while not e.wait(time):
-        func()
-
-def foo():
-    print ("hello")
 
 
 
@@ -33,5 +25,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-    setInterval(foo, 5)
 
